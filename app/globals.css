@@ -2,8 +2,6 @@
 @plugin "daisyui";
 
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
@@ -11,11 +9,13 @@
   --background: #ffffff;
   --foreground: #171717;
   --primary: #004f61;
+  --secondary: #0288d1;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);

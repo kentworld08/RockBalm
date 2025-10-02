@@ -1,14 +1,9 @@
+import MobileMenu from "@/app/NavBar/MobileView/MobileMenu";
 import Link from "next/link";
+import { NavLinks } from "@/Data";
+import Actionbtn from "./actionbtn";
 
 const Navbar = () => {
-  const NavLinks = [
-    "Home",
-    "About Us",
-    "Plans",
-    "Services",
-    "Blog",
-    "Self Care Hub",
-  ];
   return (
     <header className="bg-white ">
       <nav className="navbar justify-between px-6">
@@ -16,18 +11,18 @@ const Navbar = () => {
           RockBalm
         </Link>
 
-        <ul className="flex gap-6">
+        <ul className="font-medium gap-6 hidden md:flex">
           {NavLinks.map((link, index) => (
-            <li key={index} className="font-inter text-primary">
+            <li
+              key={index}
+              className="font-inter text-primary text-[clamp(14px,_1vw,_16px)]"
+            >
               <Link href={`/${link}`}>{link}</Link>
             </li>
           ))}
         </ul>
-
-        <div>
-          <button className="btn">Login</button>
-          <button className="btn">Create Account</button>
-        </div>
+        <Actionbtn />
+        <MobileMenu />
       </nav>
     </header>
   );
