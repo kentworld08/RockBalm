@@ -1,0 +1,15 @@
+import Hero from "./Hero";
+import Plans from "./Plans";
+// import Offer from "./Offer";
+
+const HomeView = () => {
+  return (
+    <div>
+      <Hero />
+      {/* <Offer /> */}
+      <Plans />
+    </div>
+  );
+};
+
+export default HomeView;

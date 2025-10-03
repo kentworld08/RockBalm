@@ -3,9 +3,9 @@ import { NavLinks } from "@/Data";
 
 const SideMenu = () => {
   return (
-    <div className="bg-white h-screen w-[250px] text-primary">
+    <div className="bg-white h-screen w-[250px] text-primary pt-10">
       {" "}
-      <ul className="font-medium gap-6 hidden md:flex">
+      <ul className="font-medium gap-6 justify-center flex flex-col items-center">
         {NavLinks.map((link, index) => (
           <li
             key={index}

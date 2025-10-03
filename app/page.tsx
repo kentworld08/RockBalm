@@ -1,7 +1,12 @@
-export default function Home() {
+import HomeView from "@/components/Home/HomeView";
+import React from "react";
+
+const page = () => {
   return (
-    <div>
-      <h1 className="text-yellow-400 text-2xl">This is the beginning</h1>
-    </div>
+    <main className="bg-white text-black px-6 pt-[14px]">
+      <HomeView />;
+    </main>
   );
-}
+};
+
+export default page;

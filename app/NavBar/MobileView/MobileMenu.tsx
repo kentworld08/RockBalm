@@ -33,7 +33,7 @@ const MobileMenu = () => {
       </div>
       <div
         className={`absolute top-13 z-50 -right-6 ease-in-out transform transition-transform duration-150 ${
-          isOpen ? "translate-x-0" : "translate-x-full"
+          isOpen ? "translate-x-0" : "translate-x-full hidden"
         }`}
       >
         <SideMenu />

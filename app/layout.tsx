@@ -1,11 +1,17 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Inter } from "next/font/google";
+import { Geist, Geist_Mono, Inter, Alfa_Slab_One } from "next/font/google";
 import "./globals.css";
 import Navbar from "./NavBar/Navbar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
+});
+
+const alfaSlab = Alfa_Slab_One({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-alfa-slab",
 });
 
 const inter = Inter({
@@ -31,7 +37,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${inter.variable} ${geistMono.variable} antialiased overflow-x-hidden`}
+        className={`${geistSans.variable} ${inter.variable} ${geistMono.variable} ${alfaSlab.variable} antialiased overflow-x-hidden`}
       >
         <Navbar />
         <main>{children}</main>

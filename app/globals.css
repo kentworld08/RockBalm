@@ -10,16 +10,21 @@
   --foreground: #171717;
   --primary: #004f61;
   --secondary: #0288d1;
+  --tertiary: #f5fd55;
+  --rockbalm-mid: #034f81;
 }
 
 @theme inline {
+  --color-rockbalm-mid: var(--rockbalm-mid);
   --color-background: var(--background);
   --color-primary: var(--primary);
   --color-secondary: var(--secondary);
+  --color-tertiary: var(--tertiary);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --font-inter: var(--font-inter);
+  --font-alfa-slab: "Alfa Slab One", serif;
 }
 
 @media (prefers-color-scheme: dark) {

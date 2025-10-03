@@ -5,8 +5,8 @@ import Actionbtn from "./actionbtn";
 
 const Navbar = () => {
   return (
-    <header className="bg-white ">
-      <nav className="navbar justify-between px-6">
+    <header className="bg-white fixed top-0 left-0 right-0 z-50">
+      <nav className="navbar justify-between px-6 py-4">
         <Link href="/" className="text-black">
           RockBalm
         </Link>
