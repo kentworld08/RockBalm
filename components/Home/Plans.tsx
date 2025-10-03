@@ -3,8 +3,8 @@ import { planCardData } from "./Data";
 
 const Plans = () => {
   return (
-    <main className="bg-white flex justify-center items-center p-[84.5px] flex-col gap-[60px]">
-      <div className="text-primary text-center ">
+    <section className="bg-white flex justify-center items-center p-[84.5px] flex-col gap-[60px]">
+      <div className="text-primary text-center px-6">
         <h1 className="font-alfa-slab font-normal text-[33px] -tracking-[2px]">
           Plans
         </h1>
@@ -29,7 +29,13 @@ const Plans = () => {
               }`}
             >
               <div className="mb-[45.78px]">
-                <button className="btn bg-rockbalm-mid rounded-full text-white font-medium md:text-[13.48px] btn-block">
+                <button
+                  className={`btn rounded-full text-white font-medium md:text-[13.48px] btn-block ${
+                    item.id === 2
+                      ? "bg-secondary border-secondary"
+                      : "bg-rockbalm-mid border-rockbalm-mid"
+                  }`}
+                >
                   {item.btn}
                 </button>
               </div>
@@ -56,7 +62,7 @@ const Plans = () => {
       <button className="btn bg-secondary border-secondary rounded-full">
         View All Plans
       </button>
-    </main>
+    </section>
   );
 };
 

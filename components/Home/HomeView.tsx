@@ -1,3 +1,4 @@
+import Consultation from "./Consultation";
 import Hero from "./Hero";
 import Plans from "./Plans";
 // import Offer from "./Offer";
@@ -8,6 +9,7 @@ const HomeView = () => {
       <Hero />
       {/* <Offer /> */}
       <Plans />
+      <Consultation />
     </div>
   );
 };
