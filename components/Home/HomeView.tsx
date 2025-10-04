@@ -1,5 +1,6 @@
 import Blog from "./Blog";
 import Consultation from "./Consultation";
+import FAQ from "./Faq";
 import Hero from "./Hero";
 import LabTesting from "./LabTesting";
 import Plans from "./Plans";
@@ -20,6 +21,7 @@ const HomeView = () => {
       <SelfCareHub />
       <Testimonials />
       <Blog />
+      <FAQ />
     </div>
   );
 };
