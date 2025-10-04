@@ -1,3 +1,4 @@
+import Blog from "./Blog";
 import Consultation from "./Consultation";
 import Hero from "./Hero";
 import LabTesting from "./LabTesting";
@@ -18,6 +19,7 @@ const HomeView = () => {
       <LabTesting />
       <SelfCareHub />
       <Testimonials />
+      <Blog />
     </div>
   );
 };

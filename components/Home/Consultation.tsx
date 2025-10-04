@@ -33,7 +33,7 @@ const Consultation = () => {
             key={index}
             className="card w-[21.7rem] shadow-sm p-[8.47px] font-inter text-primary mb-[16.88px]"
           >
-            <div className="bg-gradient-to-b from-[#C5E5FF] to-[#F8F8F8]w-[20rem] h-[261.58px] rounded-[13.32px]" />
+            <div className="bg-gradient-to-b from-[#C5E5FF] to-[#F8F8F8] h-[261.58px] rounded-[13.32px]" />
             <div className="mt-[16.88px]">
               <h2 className="font-semibold md:text-[24px] w-full">
                 {item.title}
