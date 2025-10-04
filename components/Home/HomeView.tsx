@@ -4,6 +4,7 @@ import LabTesting from "./LabTesting";
 import Plans from "./Plans";
 import SelfCareHub from "./SelfCareHub";
 import SeniorsStore from "./SeniorsStore";
+import Testimonials from "./Testimonials";
 // import Offer from "./Offer";
 
 const HomeView = () => {
@@ -16,6 +17,7 @@ const HomeView = () => {
       <SeniorsStore />
       <LabTesting />
       <SelfCareHub />
+      <Testimonials />
     </div>
   );
 };
