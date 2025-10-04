@@ -39,7 +39,7 @@ const FAQ = () => {
   };
 
   return (
-    <section className="bg-white flex justify-center items-center px-4 py-[84.5px] flex-col gap-[60px]">
+    <section className="bg-[#F4F4F4] flex justify-center items-center px-4 py-[84.5px] flex-col gap-[60px]">
       <div className="text-primary text-center px-6">
         <h1 className="font-alfa-slab font-normal text-[28px] md:text-[33px] -tracking-[2px]">
           Frequently Asked Questions
@@ -53,7 +53,9 @@ const FAQ = () => {
             <div
               key={index}
               className={`w-full rounded-lg transition-all duration-300 ${
-                isOpen ? "ring-2 ring-[#0288D1] bg-white" : "bg-[#F0F4F6]"
+                isOpen
+                  ? "ring-2 ring-[#0288D1] bg-white"
+                  : "bg-[#F0F4F6] shadow"
               }`}
             >
               <button
