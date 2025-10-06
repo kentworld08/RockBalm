@@ -1,3 +1,4 @@
+"use client";
 import { IoSettingsOutline } from "react-icons/io5";
 import { PiAddressBookTabsLight } from "react-icons/pi";
 import { MdHistory } from "react-icons/md";
@@ -6,8 +7,11 @@ import { FaBorderAll } from "react-icons/fa6";
 import { RxDashboard } from "react-icons/rx";
 import { AiOutlineLogout } from "react-icons/ai";
 import { MdOutlineKeyboardBackspace } from "react-icons/md";
+interface SidebarProps {
+  setActive: React.Dispatch<React.SetStateAction<string>>;
+}
 
-const DashboardSidebar = () => {
+const DashboardSidebar: React.FC<SidebarProps> = ({ setActive }) => {
   const DashboardLinks = [
     { icon: <RxDashboard />, title: "Dashboard" },
     { icon: <FaBorderAll />, title: "Order" },
@@ -29,6 +33,7 @@ const DashboardSidebar = () => {
         <div className="flex flex-col gap-6">
           {DashboardLinks.map((lnk) => (
             <button
+              onClick={() => setActive(lnk.title.toLowerCase())}
               key={lnk.title}
               className="flex items-center gap-3 text-[#040D0F] transition-colors font-inter font-normal md:text-[18px] hover:bg-secondary px-[20px] w-full "
             >
