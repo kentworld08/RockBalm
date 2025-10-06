@@ -48,7 +48,7 @@ const Footer = () => {
             alt="frame"
             height={258.84}
             width={270.92}
-            className="object-cover mx-auto md:mx-0"
+            className="object-cover mx-auto md:mx-0 hidden md:block"
           />
         </figure>
 

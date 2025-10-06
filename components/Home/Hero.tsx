@@ -14,7 +14,7 @@ const Hero = () => {
             We provide accessible, compassionate care for your elder one,
             anywhere they are.
           </p>
-          <button className="btn bg-tertiary border-tertiary rounded-full text-primary md:w-[257.12px] h-[64.5px] py-3 px-[57px] font-inter font-semibold text-[clamp(14px,_0.5vw,_17.37px)] mt-[32.98px] text-nowrap">
+          <button className="btn bg-tertiary border-tertiary rounded-full text-primary md:w-[257.12px] md:h-[64.5px] py-3 px-[57px] font-inter font-semibold text-[clamp(14px,_0.5vw,_17.37px)] mt-[32.98px] text-nowrap">
             Explore Our Plans
           </button>
         </div>

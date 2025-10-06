@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Inter, Alfa_Slab_One } from "next/font/google";
 import "./globals.css";
-import Navbar from "./NavBar/Navbar";
-import Footer from "./Footer/footer";
+import LayoutClient from "./LayoutClient";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -40,9 +39,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${inter.variable} ${geistMono.variable} ${alfaSlab.variable} antialiased overflow-x-hidden`}
       >
-        <Navbar />
-        <main>{children}</main>
-        <Footer />
+        <LayoutClient>{children}</LayoutClient>
       </body>
     </html>
   );
