@@ -19,6 +19,116 @@ export const features = [
   },
 ];
 
+export const CareplanCardData = [
+  {
+    id: 1,
+    btn: "Get Started",
+    plan: "12,000",
+    list: [
+      {
+        title: "Medication & Lab Tests:",
+        description: "Covers lab diagnostics and common medications",
+      },
+      {
+        title: "Access to Partner Hospitals:",
+        description: "Treatment available at top hospitals",
+      },
+      {
+        title: "Medication & Lab Tests:",
+        description: "Covers lab diagnostics and common medications",
+      },
+      {
+        title: "24/7 Emergency Service:",
+        description: "Emergency services available round the clock",
+      },
+      {
+        title: "Telemedicine Support:",
+        description: "Virtual doctor consultation at your convenience.",
+      },
+    ],
+  },
+  {
+    id: 2,
+    btn: "Get Started",
+    plan: "12,000",
+    list: [
+      {
+        title: "Medication & Lab Tests:",
+        description: "Covers lab diagnostics and common medications",
+      },
+      {
+        title: "Access to Partner Hospitals:",
+        description: "Treatment available at top hospitals",
+      },
+      {
+        title: "Medication & Lab Tests:",
+        description: "Covers lab diagnostics and common medications",
+      },
+      {
+        title: "24/7 Emergency Service:",
+        description: "Emergency services available round the clock",
+      },
+      {
+        title: "Telemedicine Support:",
+        description: "Virtual doctor consultation at your convenience.",
+      },
+    ],
+  },
+  {
+    id: 3,
+    btn: "Get Started",
+    plan: "12,000",
+    list: [
+      {
+        title: "Medication & Lab Tests:",
+        description: "Covers lab diagnostics and common medications",
+      },
+      {
+        title: "Access to Partner Hospitals:",
+        description: "Treatment available at top hospitals",
+      },
+      {
+        title: "Medication & Lab Tests:",
+        description: "Covers lab diagnostics and common medications",
+      },
+      {
+        title: "24/7 Emergency Service:",
+        description: "Emergency services available round the clock",
+      },
+      {
+        title: "Telemedicine Support:",
+        description: "Virtual doctor consultation at your convenience.",
+      },
+    ],
+  },
+  {
+    id: 4,
+    btn: "Get Started",
+    plan: "12,000",
+    list: [
+      {
+        title: "Medication & Lab Tests:",
+        description: "Covers lab diagnostics and common medications",
+      },
+      {
+        title: "Access to Partner Hospitals:",
+        description: "Treatment available at top hospitals",
+      },
+      {
+        title: "Medication & Lab Tests:",
+        description: "Covers lab diagnostics and common medications",
+      },
+      {
+        title: "24/7 Emergency Service:",
+        description: "Emergency services available round the clock",
+      },
+      {
+        title: "Telemedicine Support:",
+        description: "Virtual doctor consultation at your convenience.",
+      },
+    ],
+  },
+];
 export const planCardData = [
   {
     id: 1,

@@ -14,13 +14,13 @@ const GeriatricCarePlans = () => {
         Explore Our Plans
       </button>
 
-      <figure className="mt-6 w-screen relative left-1/2 right-1/2 -mx-[50vw]">
+      <figure className="mt-6 w-screen relative left-1/2 right-1/2 -mx-[50vw] justify-center flex">
         <Image
           src="/GeriatricCarePlans.png"
           alt="GeriatricCarePlans"
-          width={1920}
+          width={1160}
           height={600}
-          className="w-screen h-auto object-cover"
+          className="h-auto object-cover rounded-lg"
         />
       </figure>
     </div>
