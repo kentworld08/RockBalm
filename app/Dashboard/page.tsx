@@ -4,11 +4,12 @@ import AddPrescription from "@/components/Dashboard/AddPrescription";
 import DashboardNav from "@/components/Dashboard/DashBoardNavbar";
 import { LastOder } from "@/components/Dashboard/latestOrder";
 import Order from "@/components/Dashboard/Order";
+import Plans from "@/components/Dashboard/Plans";
 import DashboardSidebar from "@/components/Dashboard/Sidebar";
 import { useState } from "react";
 
 const DashboardPage = () => {
-  const [isActive, setisActive] = useState<string>("order");
+  const [isActive, setisActive] = useState<string>("plans");
   const [addPrescription, setAddPrescription] = useState<boolean>(false);
 
   console.log(isActive);
@@ -26,6 +27,7 @@ const DashboardPage = () => {
           {isActive === "order" && (
             <Order setaddprescription={setAddPrescription} />
           )}
+          {isActive === "plans" && <Plans />}
         </div>
       </div>
       {addPrescription && (
