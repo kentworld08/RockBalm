@@ -55,7 +55,7 @@ const Testimonials = () => {
                 {item.description}
               </p>
             </div>
-            <div>
+            <div className="flex justify-self-start items-center">
               <Image
                 src={item.img}
                 alt={item.name}
