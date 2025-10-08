@@ -6,7 +6,7 @@ const JoinUs = () => {
           Join Us on This Journey
         </h1>
         <p className="font-medium font-inter md:text-[22px] leading-[32px] md:w-[560px] w-[350px]">
-          Your health matters. Your loved one's health matters.Start today
+          Your health matters. Your loved one&apos;s health matters.Start today
           explore our care plans, book your first home consultation, and
           experience the Rockbalm difference.
         </p>

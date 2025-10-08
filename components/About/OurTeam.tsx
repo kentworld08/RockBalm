@@ -1,5 +1,3 @@
-import { BiHealth } from "react-icons/bi";
-
 const OurTeam = () => {
   const data = [1, 2, 3, 4, 5, 6];
   return (
