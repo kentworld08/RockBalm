@@ -19,7 +19,7 @@ const Navbar = () => {
           {NavLinks.map((link, index) => (
             <li
               key={index}
-              className="font-inter text-primary text-[clamp(14px,_1vw,_16px)] relative"
+              className="font-inter hover:text-secondary text-primary text-[clamp(14px,_1vw,_16px)] relative"
               onMouseEnter={() => link === "Services" && setIsHovering(true)}
               onMouseLeave={() => link === "Services" && setIsHovering(false)}
             >
