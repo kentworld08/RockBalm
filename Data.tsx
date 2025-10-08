@@ -6,3 +6,5 @@ export const NavLinks: string[] = [
   "Blog",
   "Self Care Hub",
 ];
+
+export const dropdownLink = ["SeniorStore", "Consultation", "Lab Testing"];
