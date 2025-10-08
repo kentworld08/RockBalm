@@ -37,7 +37,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${inter.variable} ${geistMono.variable} ${alfaSlab.variable} antialiased overflow-x-hidden max-w-[1200px]`}
+        className={`${geistSans.variable} ${inter.variable} ${geistMono.variable} ${alfaSlab.variable} antialiased overflow-x-hidden`}
       >
         <LayoutClient>{children}</LayoutClient>
       </body>

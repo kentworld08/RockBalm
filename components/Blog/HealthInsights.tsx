@@ -18,16 +18,18 @@ const HealthInsights = () => {
   ];
 
   return (
-    <div className="bg-[#F8F8F8] w-full flex flex-col justify-center items-center pt-[53px] gap-[40px]">
+    <div className="bg-[#F8F8F8] w-full flex flex-col justify-center items-center py-12 px-5 md:px-0 gap-10">
       {data.map((item) => (
         <ul
           key={item.title}
-          className="text-left font-inter md:w-[1042px] w-full"
+          className="text-left font-inter w-full max-w-[1042px]"
         >
-          <li className="text-primary font-extrabold md:text-[28px]">
-            {item.title}
+          <li>
+            <h3 className="text-primary font-extrabold text-xl sm:text-2xl md:text-[28px] mb-3">
+              {item.title}
+            </h3>
             <p
-              className="font-medium md:text-[18px] text-primary"
+              className="font-medium text-[15px] sm:text-[16px] md:text-[18px] text-primary leading-relaxed"
               dangerouslySetInnerHTML={{ __html: item.details }}
             />
           </li>

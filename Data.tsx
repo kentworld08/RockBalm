@@ -1,6 +1,6 @@
 export const NavLinks: string[] = [
   "Home",
-  "About Us",
+  "About",
   "Plans",
   "Services",
   "Blog",
