@@ -1,7 +1,20 @@
-import React from "react";
+"use client";
 
-const ConsultationCard = () => {
-  const BlogCardData = [
+type ConsultationCardProps = {
+  setConsultation: React.Dispatch<React.SetStateAction<string>>;
+};
+
+type BlogCard = {
+  title: string;
+  description: string;
+  btn: string;
+  color: string;
+};
+
+const ConsultationCard: React.FC<ConsultationCardProps> = ({
+  setConsultation,
+}) => {
+  const BlogCardData: BlogCard[] = [
     {
       title: "Consult with a doctor today",
       description:
@@ -42,6 +55,7 @@ const ConsultationCard = () => {
             <p className="text-black">{item.description}</p>
             <div className="card-actions">
               <button
+                onClick={() => setConsultation(item.btn.split(" ").at(0) ?? "")}
                 style={{ backgroundColor: item.color, border: item.color }}
                 className={`w-full rounded-full py-2 font-medium btn ${
                   item.btn === "Coming Soon"
