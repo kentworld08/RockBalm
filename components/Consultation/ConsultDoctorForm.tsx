@@ -124,7 +124,7 @@ const ConsultDoctorForm: React.FC<ConsultDoctorFormProps> = ({
               type="submit"
               className="btn border-secondary bg-secondary text-white text-sm px-5 py-2.5 font-medium"
             >
-              Add Prescription
+              Conduct A Doctor
             </button>
           </div>
         </form>

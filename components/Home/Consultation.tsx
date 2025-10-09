@@ -18,7 +18,7 @@ const Consultation = () => {
   return (
     <section className="bg-white flex justify-center items-center p-[84.5px] flex-col gap-[60px]">
       <div className="text-primary text-center px-6">
-        <h1 className="font-alfa-slab font-normal text-[33px] -tracking-[2px]">
+        <h1 className="font-alfa-slab font-normal md:text-[33px] -tracking-[2px]">
           Consultation
         </h1>
         <p className="font-medium font-inter md:text-[22px] leading-[32px] md:w-[560px] w-[350px]">
