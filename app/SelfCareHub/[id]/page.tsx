@@ -1,5 +1,11 @@
 import BMI from "@/components/SelfCareHub/BMI";
+import BMR from "@/components/SelfCareHub/BMR";
+import Calorie from "@/components/SelfCareHub/Calorie";
+import FatIntakeCalculator from "@/components/SelfCareHub/FatIntakeCalculator";
+import HealthyWeightCalculator from "@/components/SelfCareHub/HealthyWeightCalculator";
 import OvulationChecker from "@/components/SelfCareHub/OvulationChecker";
+import PeriodChecker from "@/components/SelfCareHub/PeriodChecker";
+import PregnancyLastPeriodCalculator from "@/components/SelfCareHub/PregnancyLastPeriodCalculator";
 import { consultationCardData } from "@/components/SelfCareHub/SelfCareHubCardData";
 
 interface PageProps {
@@ -20,7 +26,13 @@ export default async function SelfCareHubDetailPage({ params }: PageProps) {
   return (
     <main>
       {id === "1" && <BMI />}
+      {id === "2" && <Calorie />}
       {id === "3" && <OvulationChecker />}
+      {id === "4" && <BMR />}
+      {id === "5" && <FatIntakeCalculator />}
+      {id === "6" && <HealthyWeightCalculator />}
+      {id === "7" && <PeriodChecker />}
+      {id === "8" && <PregnancyLastPeriodCalculator />}
     </main>
   );
 }
