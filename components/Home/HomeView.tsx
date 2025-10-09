@@ -7,13 +7,13 @@ import Plans from "./Plans";
 import SelfCareHub from "./SelfCareHub";
 import SeniorsStore from "./SeniorsStore";
 import Testimonials from "./Testimonials";
-// import Offer from "./Offer";
+import Offer from "./Offer";
 
 const HomeView = () => {
   return (
     <div>
       <Hero />
-      {/* <Offer /> */}
+      <Offer />
       <Plans />
       <Consultation />
       <SeniorsStore />

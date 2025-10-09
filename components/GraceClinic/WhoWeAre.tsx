@@ -13,11 +13,11 @@ const WhoWeAre = () => {
       <div className="text-primary font-inter">
         <h1 className="font-bold md:text-[40px]">Our Inspiration</h1>
         <p className="text-[#272635] font-normal">
-          Inspired by our faith in Jesus Christ, we believe in God's power to
-          heal and His desire for His children to live in good health. While He
-          provides healing, He also calls us to care for our bodies, including
-          through proper nutrition and, when necessary, medication. This
-          initiative is an expression of our faith in His love and healing
+          Inspired by our faith in Jesus Christ, we believe in God&apos;s power
+          to heal and His desire for His children to live in good health. While
+          He provides healing, He also calls us to care for our bodies,
+          including through proper nutrition and, when necessary, medication.
+          This initiative is an expression of our faith in His love and healing
           power.
         </p>
       </div>
@@ -60,7 +60,7 @@ const WhoWeAre = () => {
           We aim to ease the financial burden of healthcare by delivering free
           medications monthly to individuals with health challenges, directly to
           their homes. Rockbalm Free Clinic seeks not only to support physical
-          health but also to share the love and truth of Jesus Christ.
+          health but also to share the love and truth of Jesus Christ.
         </p>
       </div>
     </div>
