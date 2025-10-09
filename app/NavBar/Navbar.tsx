@@ -20,13 +20,17 @@ const Navbar = () => {
             <li
               key={index}
               className="font-inter hover:text-secondary text-primary text-[clamp(14px,_1vw,_16px)] relative"
-              onMouseEnter={() => link === "Services" && setIsHovering(true)}
-              onMouseLeave={() => link === "Services" && setIsHovering(false)}
+              onMouseEnter={() =>
+                link.name === "Services" && setIsHovering(true)
+              }
+              onMouseLeave={() =>
+                link.name === "Services" && setIsHovering(false)
+              }
             >
-              <Link href={`/${link}`}>{link}</Link>
+              <Link href={`/${link.href}`}>{link.name}</Link>
 
               {/* Show dropdown only on hover */}
-              {link === "Services" && isHovering && <DropdownLink />}
+              {link.name === "Services" && isHovering && <DropdownLink />}
             </li>
           ))}
         </ul>

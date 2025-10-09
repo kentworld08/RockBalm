@@ -1,10 +1,14 @@
-export const NavLinks: string[] = [
-  "Home",
-  "About",
-  "Plans",
-  "Services",
-  "Blog",
-  "Self Care Hub",
+export const NavLinks = [
+  { name: "Home", href: "SeniorStore" },
+  { name: "About Us", href: "About" },
+  { name: "Plans", href: "Plans" },
+  { name: "Services", href: "Services" },
+  { name: "Blog", href: "Blog" },
+  { name: "Self Care Hub", href: "SelfCareHub" },
 ];
 
-export const dropdownLink = ["SeniorStore", "Consultation", "Lab Testing"];
+export const dropdownLink = [
+  { name: "Senior Store", href: "SeniorStore" },
+  { name: "Consultation", href: "Consultation" },
+  { name: "Lab Testing", href: "LabTesting" },
+];

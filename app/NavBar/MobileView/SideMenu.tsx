@@ -11,7 +11,7 @@ const SideMenu = () => {
             key={index}
             className="font-inter text-primary text-[clamp(14px,_1vw,_16px)]"
           >
-            <Link href={`/${link}`}>{link}</Link>
+            <Link href={`/${link.href}`}>{link.name}</Link>
           </li>
         ))}
       </ul>
