@@ -25,7 +25,7 @@ const Footer = () => {
       title: "Resources",
       links: [
         { name: "Medical", href: "#" },
-        { name: "Grace Clinic", href: "#" },
+        { name: "Grace Clinic", href: "/GraceClinic" },
         { name: "FAQS", href: "#" },
       ],
     },
