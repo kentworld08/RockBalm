@@ -22,14 +22,15 @@ const DashboardSidebar: React.FC<SidebarProps> = ({ setActive }) => {
   ];
 
   return (
-    <div className="md:w-[330px] h-screen bg-white border border-[#E0E0E0] shadow-sm flex flex-col">
+    <div className="w-[60px] md:w-[330px] h-screen bg-white border border-[#E0E0E0] shadow-sm flex flex-col">
       <div className="h-[189px] flex justify-center items-center border-b border-[#E0E0E0]">
-        <h1 className="text-center text-primary text-xl font-semibold">
+        <h1 className="text-center text-primary text-xl font-semibold hidden md:block">
           RockBalm
         </h1>
+        <p className="md:hidden font-bold">R</p>
       </div>
 
-      <div className="flex-1 overflow-y-auto px-[29px] py-6">
+      <div className="flex-1 overflow-y-auto md:px-[29px] py-6">
         <div className="flex flex-col gap-6">
           {DashboardLinks.map((lnk) => (
             <button
@@ -38,18 +39,20 @@ const DashboardSidebar: React.FC<SidebarProps> = ({ setActive }) => {
               className="flex items-center gap-3 text-[#040D0F] transition-colors font-inter font-normal md:text-[18px] hover:bg-secondary px-[20px] w-full "
             >
               {lnk.icon}
-              <span>{lnk.title}</span>
+              <span className="hidden md:block">{lnk.title}</span>
             </button>
           ))}
         </div>
       </div>
 
-      <div className="px-[20px] py-6 border-t border-[#E0E0E0]">
-        <button className="btn bg-transparent border-none shadow-none justify-start gap-2 w-full text-left text-red-500 mb-3 hover:underline">
+      <div className="px-3 md:px-[20px] py-6 border-t border-[#E0E0E0]">
+        <AiOutlineLogout className="md:hidden mb-3" color="red" />
+        <MdOutlineKeyboardBackspace size={24} className="md:hidden" />
+        <button className="hidden btn bg-transparent border-none shadow-none justify-start gap-2 w-full text-left text-red-500 mb-3 hover:underline md:flex">
           <AiOutlineLogout />
           Logout
         </button>
-        <button className=" btn shadow w-full bg-[#0288D1]/10 border-none text-[#0288D1] rounded-md justify-start text-start gap-2.5">
+        <button className="hidden md:flex btn shadow w-full bg-[#0288D1]/10 border-none text-[#0288D1] rounded-md justify-start text-start gap-2.5">
           <MdOutlineKeyboardBackspace size={24} />
           Back to Home
         </button>

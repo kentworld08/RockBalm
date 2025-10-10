@@ -6,6 +6,7 @@ import { History } from "@/components/Dashboard/History";
 import { LastOder } from "@/components/Dashboard/latestOrder";
 import Order from "@/components/Dashboard/Order";
 import Plans from "@/components/Dashboard/Plans";
+import Settings from "@/components/Dashboard/Settings/Settings";
 import DashboardSidebar from "@/components/Dashboard/Sidebar";
 import { useState } from "react";
 
@@ -30,6 +31,7 @@ const DashboardPage = () => {
           )}
           {isActive === "plans" && <Plans />}
           {isActive === "history" && <History />}
+          {isActive === "settings" && <Settings />}
         </div>
       </div>
       {addPrescription && (

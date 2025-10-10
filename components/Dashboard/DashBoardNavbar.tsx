@@ -4,7 +4,7 @@ const DashboardNav = () => {
   return (
     <div className="h-[189px] items-center flex px-6">
       <div className="flex items-center justify-between w-full">
-        <div className="">
+        <div className="hidden md:block">
           <h1 className="font-inter font-normal md:text-[28px]">
             Hey there, Christain
           </h1>
