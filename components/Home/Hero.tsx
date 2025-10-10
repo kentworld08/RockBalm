@@ -1,7 +1,15 @@
+"use client";
+
 import Image from "next/image";
 import { features } from "./Data";
+import { useRouter } from "next/navigation";
 
 const Hero = () => {
+  const router = useRouter();
+
+  const handleExplore = () => {
+    router.push("/CheckOut");
+  };
   return (
     <div className="px-6">
       <div className="bg-[url('/hero-bg.png')] bg-cover bg-center w-full h-[902px] rounded-[26px] flex flex-col md:flex-row md:justify-between space-y-10 justify-center items-center p-4 mt-[94px] md:mt-[80px] space-x-10">
@@ -14,7 +22,10 @@ const Hero = () => {
             We provide accessible, compassionate care for your elder one,
             anywhere they are.
           </p>
-          <button className="btn bg-tertiary border-tertiary rounded-full text-primary md:w-[257.12px] md:h-[64.5px] py-3 px-[57px] font-inter font-semibold text-[clamp(14px,_0.5vw,_17.37px)] mt-[32.98px] text-nowrap">
+          <button
+            onClick={handleExplore}
+            className="btn bg-tertiary border-tertiary rounded-full text-primary md:w-[257.12px] md:h-[64.5px] py-3 px-[57px] font-inter font-semibold text-[clamp(14px,_0.5vw,_17.37px)] mt-[32.98px] text-nowrap"
+          >
             Explore Our Plans
           </button>
         </div>

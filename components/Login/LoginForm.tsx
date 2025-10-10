@@ -9,7 +9,7 @@ import Reset from "./reset";
 type FormStatus = "signin" | "signup" | "reset" | "";
 
 const LoginForm = () => {
-  const [formStatus, setformStatus] = useState<FormStatus>("");
+  const [formStatus, setformStatus] = useState<FormStatus>("signin");
 
   return (
     <div className="flex h-screen flex-col md:flex-row w-full bg-white">
