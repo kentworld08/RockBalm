@@ -1,7 +1,11 @@
 "use client";
 
+import { useRouter } from "next/navigation";
+
 const Actionbtn = () => {
+  const router = useRouter();
   const handleLogin = () => {
+    router.push("/login");
     console.log("Login clicked");
   };
   const handleCreateAccount = () => {
