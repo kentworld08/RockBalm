@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { NavLinks } from "@/Data";
+import { dropdownLink, NavLinks } from "@/Data";
 
 const SideMenu = () => {
   return (
@@ -7,6 +7,14 @@ const SideMenu = () => {
       {" "}
       <ul className="font-medium gap-6 justify-center flex flex-col items-center">
         {NavLinks.map((link, index) => (
+          <li
+            key={index}
+            className="font-inter text-primary text-[clamp(14px,_1vw,_16px)]"
+          >
+            <Link href={`/${link.href}`}>{link.name}</Link>
+          </li>
+        ))}
+        {dropdownLink.map((link, index) => (
           <li
             key={index}
             className="font-inter text-primary text-[clamp(14px,_1vw,_16px)]"
