@@ -13,7 +13,7 @@ export default function LayoutClient({
 
   // Only show Navbar and Footer on the home page
   const showLayout =
-    pathname !== "/dashboard" &&
+    pathname !== "/Dashboard" &&
     pathname !== "/login" &&
     pathname !== "/CheckOut";
 

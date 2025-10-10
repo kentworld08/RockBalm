@@ -2,6 +2,7 @@
 
 import AddPrescription from "@/components/Dashboard/AddPrescription";
 import DashboardNav from "@/components/Dashboard/DashBoardNavbar";
+import { History } from "@/components/Dashboard/History";
 import { LastOder } from "@/components/Dashboard/latestOrder";
 import Order from "@/components/Dashboard/Order";
 import Plans from "@/components/Dashboard/Plans";
@@ -28,6 +29,7 @@ const DashboardPage = () => {
             <Order setaddprescription={setAddPrescription} />
           )}
           {isActive === "plans" && <Plans />}
+          {isActive === "history" && <History />}
         </div>
       </div>
       {addPrescription && (
