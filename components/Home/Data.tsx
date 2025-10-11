@@ -1,5 +1,3 @@
-import { link } from "fs";
-
 export const features = [
   {
     title: "Medical Cansultation",
@@ -13,7 +11,7 @@ export const features = [
     description:
       "Tailored care plans designed to meet your elder's unique health needs and lifestyle.",
     img: "/plans.jpg",
-    lnk: "",
+    lnk: "/",
   },
   {
     title: "Lab Testing",

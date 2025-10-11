@@ -18,14 +18,14 @@ const Footer = () => {
       links: [
         { name: "About", href: "#" },
         { name: "Partnership", href: "#" },
-        { name: "Blog", href: "#" },
+        { name: "Grace Clinic", href: "/GraceClinic" },
       ],
     },
     {
       title: "Resources",
       links: [
-        { name: "Medical", href: "#" },
-        { name: "Grace Clinic", href: "/GraceClinic" },
+        { name: "Contact", href: "/Contact" },
+        { name: "Blog", href: "#" },
         { name: "FAQS", href: "#" },
       ],
     },
