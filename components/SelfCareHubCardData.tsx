@@ -1,4 +1,4 @@
-export const consultationCardData = [
+export const SelfCareHubCardData = [
   {
     id: 1,
     title: "Body Mass Index (BMI)",

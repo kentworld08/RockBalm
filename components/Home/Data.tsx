@@ -1,21 +1,26 @@
+import { link } from "fs";
+
 export const features = [
   {
-    title: "Medical Calculations",
+    title: "Medical Cansultation",
     description:
       "Quick, easy-to-use tools to track health metrics and support better care decisions",
     img: "/med-img.jpg",
+    lnk: "/Consultation",
   },
   {
     title: "Personalized Health Plans",
     description:
       "Tailored care plans designed to meet your elder's unique health needs and lifestyle.",
     img: "/plans.jpg",
+    lnk: "",
   },
   {
     title: "Lab Testing",
     description:
       "Schedule secure lab tests with trusted local partners fast results, hassle-free care.",
     img: "/test.jpg",
+    lnk: "/LabTesting",
   },
 ];
 

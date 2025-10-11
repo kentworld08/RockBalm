@@ -6,7 +6,7 @@ import HealthyWeightCalculator from "@/components/SelfCareHub/HealthyWeightCalcu
 import OvulationChecker from "@/components/SelfCareHub/OvulationChecker";
 import PeriodChecker from "@/components/SelfCareHub/PeriodChecker";
 import PregnancyLastPeriodCalculator from "@/components/SelfCareHub/PregnancyLastPeriodCalculator";
-import { consultationCardData } from "@/components/SelfCareHub/SelfCareHubCardData";
+import { SelfCareHubCardData } from "@/components/SelfCareHubCardData";
 
 interface PageProps {
   params: Promise<{
@@ -17,7 +17,7 @@ interface PageProps {
 export default async function SelfCareHubDetailPage({ params }: PageProps) {
   const { id } = await params;
 
-  const item = consultationCardData.find((data) => data.id.toString() === id);
+  const item = SelfCareHubCardData.find((data) => data.id.toString() === id);
 
   if (!item) {
     return <div className="p-8 text-center text-red-500">Item not found.</div>;

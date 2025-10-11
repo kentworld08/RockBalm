@@ -36,7 +36,10 @@ const Hero = () => {
               className="bg-white/20 backdrop-blur-md border border-white/30 rounded-xl shadow-lg flex overflow-hidden h-[152.51px]"
             >
               <div className="mx-[16.49px] my-[20.61px]">
-                <button className="btn bg-tertiary rounded-full border-tertiary text-primary font-inter font-bold text-[10px] h-[30.23px] mb-[19.24px]">
+                <button
+                  onClick={() => router.push(feat.lnk)}
+                  className="btn bg-tertiary rounded-full border-tertiary text-primary font-inter font-bold text-[10px] h-[30.23px] mb-[19.24px]"
+                >
                   {feat.title}
                 </button>
                 <p className="text-white font-semibold text-[10px] font-inter w-[182.74px]">

@@ -1,12 +1,12 @@
 import { IoChevronForward } from "react-icons/io5";
-import { consultationCardData } from "./SelfCareHubCardData";
+import { SelfCareHubCardData } from "../SelfCareHubCardData";
 import Link from "next/link";
 
 const SelfCareHubCard = () => {
   return (
     <section className="bg-white flex justify-center items-center px-4 py-12 flex-col gap-[60px]">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-center gap-[14.09px]">
-        {consultationCardData.map((item, index) => (
+        {SelfCareHubCardData.map((item, index) => (
           <div
             key={index}
             className="card w-full max-w-[21.7rem] shadow-sm p-[8.47px] font-inter text-primary mb-[16.88px] mx-auto"
