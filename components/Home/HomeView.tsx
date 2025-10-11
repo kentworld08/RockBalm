@@ -11,7 +11,7 @@ import Offer from "./Offer";
 
 const HomeView = () => {
   return (
-    <div>
+    <div className="overflow-hidden">
       <Hero />
       <Offer />
       <Plans />
